@@ -16,7 +16,7 @@ const LineChart = ({ dailyData }) =>
           },
           {
             data: dailyData.map(({ deaths }) => deaths),
-            label: "Infected",
+            label: "Death",
             borderColor: "red",
             backgroundColor: "rgba(255, 0, 0, 0.5)",
             fill: true,
