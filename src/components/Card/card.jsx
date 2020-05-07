@@ -3,6 +3,7 @@ import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import styles from "./card.module.css";
 import CountUp from "react-countup";
 import cn from "classnames";
+
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   if (!confirmed) {
     return "Loading...";
@@ -19,7 +20,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
         >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Infected
+              Positif
             </Typography>
             <Typography variant="h5">
               <CountUp
@@ -33,7 +34,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              Number of active cases of COVID-19
+              Jumlah orang yang terinfeksi virus COVID-19
             </Typography>
           </CardContent>
         </Grid>
@@ -46,7 +47,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
         >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Recovered
+              Sembuh
             </Typography>
             <Typography variant="h5">
               <CountUp
@@ -60,7 +61,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              Number of recoveries from COVID-19
+              Jumlah pasien yang sembuh dari virus COVID-19
             </Typography>
           </CardContent>
         </Grid>
@@ -73,7 +74,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
         >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Deaths
+              Meninggal
             </Typography>
             <Typography variant="h5">
               <CountUp
@@ -87,7 +88,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              Number of deaths caused by COVID-19
+              Jumlah pasien yang meninggal akibat COVID-19
             </Typography>
           </CardContent>
         </Grid>

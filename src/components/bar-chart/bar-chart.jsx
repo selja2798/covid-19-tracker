@@ -5,10 +5,10 @@ const BarChart = ({ data: { confirmed, recovered, deaths }, country }) =>
   confirmed ? (
     <Bar
       data={{
-        labels: ["Infected", "Recovered", "Deaths"],
+        labels: ["Positif", "Sembuh", "Meninggal"],
         datasets: [
           {
-            label: "People",
+            label: "",
             backgroundColor: [
               "rgba(0, 0, 255, 0.5)",
               "rgba(0, 255, 0, 0.5)",
@@ -20,7 +20,7 @@ const BarChart = ({ data: { confirmed, recovered, deaths }, country }) =>
       }}
       options={{
         legend: false,
-        title: { display: true, text: `Current state in ${country}` },
+        title: { display: true, text: `Data saat ini di negara ${country}` },
       }}
     />
   ) : null;

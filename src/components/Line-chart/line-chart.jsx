@@ -10,13 +10,13 @@ const LineChart = ({ dailyData }) =>
         datasets: [
           {
             data: dailyData.map(({ confirmed }) => confirmed),
-            label: "Infected",
+            label: "Positif",
             borderColor: "#3333ff",
             fill: true,
           },
           {
             data: dailyData.map(({ deaths }) => deaths),
-            label: "Death",
+            label: "Meninggal",
             borderColor: "red",
             backgroundColor: "rgba(255, 0, 0, 0.5)",
             fill: true,
