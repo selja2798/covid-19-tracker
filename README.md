@@ -3,3 +3,7 @@
 Setup:
 
 - run `npm i && npm start`
+
+API from:
+
+- https://covid19.mathdro.id/api
