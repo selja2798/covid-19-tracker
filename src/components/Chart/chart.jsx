@@ -17,8 +17,6 @@ const Chart = ({ data, country }) => {
     fetchAPI();
   }, []);
 
-  console.log(data);
-
   return (
     <div className={styles.container}>
       {country ? (
